@@ -1,0 +1,60 @@
+.yt-layout { font-family: sans-serif; height: 100vh; display: flex; flex-direction: column; }
+.navbar { display: flex; justify-content: space-between; padding: 10px 20px; border-bottom: 1px solid #ddd; align-items: center; }
+.search { width: 40%; padding: 8px 15px; border-radius: 20px; border: 1px solid #ccc; }
+.body-content { display: flex; flex: 1; }
+.sidebar { width: 180px; padding: 20px; border-right: 1px solid #eee; background: #f9f9f9; }
+.sidebar ul { list-style: none; padding: 0; }
+.sidebar li { padding: 10px 0; cursor: pointer; border-bottom: 1px solid #f0f0f0; }
+.feed { flex: 1; padding: 20px; background: #fff; }
+.video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+.video-card { cursor: pointer; }
+.thumb-box { background: #f0f0f0; height: 120px; display: flex; align-items: center; justify-content: center; font-size: 3rem; border-radius: 10px; margin-bottom: 10px; }
+.video-card h4 { margin: 5px 0; font-size: 0.95rem; }
+.video-card p { color: #606060; font-size: 0.8rem; }
+/* Sidebar Spacing */
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  border-right: 1px solid #f0f0f0;
+  text-align: left;
+}
+
+.side-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.side-item:hover {
+  background: #f2f2f2;
+  border-radius: 8px;
+}
+
+/* Category Bar Spacing (The "Pills") */
+.category-bar {
+  padding: 15px;
+  display: flex;
+  gap: 12px; /* This creates the space between the words */
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.tag {
+  background: #f2f2f2;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tag:hover {
+  background: #e5e5e5;
+}
+
+/* Layout Fix */
+.main-container {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+}

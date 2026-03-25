@@ -1,0 +1,87 @@
+.mood-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.6s cubic-bezier(0.4, 0, 0.2, 1); /* Smoother transition */
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+.mood-card {
+  background: white;
+  padding: 60px 40px; /* More vertical padding for height */
+  border-radius: 32px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  text-align: center;
+  width: 400px;
+  min-height: 500px; /* Ensures the card has enough room to grow */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This pushes top and bottom elements apart */
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-top: 0; /* Keeps it at the very top */
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.display-emoji {
+  font-size: 6rem; /* Slightly larger for impact */
+  margin: 40px 0; /* Creates large spacing above and below the emoji */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.display-emoji:hover {
+  transform: scale(1.1); /* Fun little hover effect */
+}
+
+.mood-info-box {
+  margin-bottom: 30px;
+}
+
+.mood-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #333;
+}
+
+.mood-quote {
+  font-style: italic;
+  color: #666;
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+.button-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+button {
+  padding: 14px;
+  border: 2px solid #f0f0f0;
+  border-radius: 16px;
+  background: #fdfdfd;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #f5f5f5;
+  border-color: #e0e0e0;
+}
+
+button.active {
+  background: #1a1a1a;
+  color: white;
+  border-color: #1a1a1a;
+  transform: translateY(-2px); /* Slight lift for the active button */
+}

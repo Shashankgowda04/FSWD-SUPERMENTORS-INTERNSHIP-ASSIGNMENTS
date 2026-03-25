@@ -1,0 +1,117 @@
+/* Using a professional font and a soft background */
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todo-card {
+  background: white;
+  width: 420px;
+  padding: 35px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #edf2f7;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.add-btn {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #357abd;
+}
+
+/* Task List - Improved Spacing */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background-color: #ffffff;
+  border: 1px solid #f0f4f8;
+  border-radius: 15px;
+  /* Subtle shadow makes it look "layered" */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s;
+}
+
+/* Adds a tiny lift when you hover over a task */
+.task-item:hover {
+  transform: translateY(-2px);
+  border-color: #e2e8f0;
+}
+
+.task-item span {
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.delete-btn {
+  background-color: #fff5f5;
+  color: #e53e3e;
+  border: 1px solid #feb2b2;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #e53e3e;
+  color: white;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #a0aec0;
+  font-style: italic;
+  margin-top: 20px;
+}
